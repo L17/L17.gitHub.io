@@ -1,0 +1,45 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Hello Friend</title>
+        <link>https://l17.github.io/posts/</link>
+        <description>Recent content in Posts on Hello Friend</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Tue, 13 Jul 2021 21:54:20 +0800</lastBuildDate>
+        <atom:link href="https://l17.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Http Put与post</title>
+            <link>https://l17.github.io/posts/http-put-post/</link>
+            <pubDate>Tue, 13 Jul 2021 21:54:20 +0800</pubDate>
+            
+            <guid>https://l17.github.io/posts/http-put-post/</guid>
+            <description>http常见的请求定义方法get、post、put、delete等
+粗略认为get是查；delete是删；post是增；put是改。合起来组成了完整的crud。
+而关于put与post的差异，更常见的说法是差异在于是否idempotent幂等，put是idempotent的方法，而post不是。
+这里的idempotent，我简单理解为请求多次操作后与一次操作是同样的结果，即最后一个请求会覆盖掉整个结果。
+然而实际编程中可以发现，对post与put的实现实际上就是server端请求处理的代码实际上并不一定符合上述的差异点。这是由于本质上http请求的put与post携带的信息是完全一样的，上述是否具有幂等性是http协议的官方描述。
+我认为从目的上理解两种方法的差异更为直观，post是希望根据目标资源的状态或性质做处理，而put则倾向于用作替换目标资源。</description>
+            <content type="html"><![CDATA[<p>http常见的请求定义方法get、post、put、delete等</p>
+<p>粗略认为get是查；delete是删；post是增；put是改。合起来组成了完整的crud。</p>
+<p>而关于put与post的差异，更常见的说法是差异在于是否idempotent幂等，put是idempotent的方法，而post不是。</p>
+<p>这里的idempotent，我简单理解为请求多次操作后与一次操作是同样的结果，即最后一个请求会覆盖掉整个结果。</p>
+<p>然而实际编程中可以发现，对post与put的实现实际上就是server端请求处理的代码实际上并不一定符合上述的差异点。这是由于本质上http请求的put与post携带的信息是完全一样的，上述是否具有幂等性是http协议的官方描述。</p>
+<p>我认为从目的上理解两种方法的差异更为直观，post是希望根据目标资源的状态或性质做处理，而put则倾向于用作替换目标资源。</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>0</title>
+            <link>https://l17.github.io/posts/first/</link>
+            <pubDate>Wed, 09 Jun 2021 00:01:30 +0800</pubDate>
+            
+            <guid>https://l17.github.io/posts/first/</guid>
+            <description>为了记录。</description>
+            <content type="html"><![CDATA[<p>为了记录。</p>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>
